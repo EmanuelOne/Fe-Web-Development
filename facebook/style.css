@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f0f2f5;
+}
+.hide {
+  display: none;
+}
+.container {
+  /* padding: 1rem 5rem 3rem 5rem; */
+  /* 4 value t r b l */
+  padding: 1rem 5rem 3rem;
+  /* 3 values t r/l b */
+  /* padding: 1rem 5rem; */
+  display: flex;
+  height: 100vh;
+  /* view port height */
+}
+.container .row img {
+  width: 50%;
+}
+.container .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container .row h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  width: 100%;
+  margin-top: 0;
+}
+form {
+  padding: 2rem 1rem;
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+}
+.row form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+}
+.container .row form input {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.container .row form a {
+  text-decoration: none;
+  text-align: center;
+  color: #1877f2;
+}
+.container .row form input:focus {
+  border: #1877f2 solid 1px;
+  outline: #1877f2 solid 1px;
+}
+.container .row form input[type="submit"] {
+  background-color: #1877f2;
+  border: 0;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+.container .row form .button {
+  background-color: #42b72a;
+  color: white;
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+}
